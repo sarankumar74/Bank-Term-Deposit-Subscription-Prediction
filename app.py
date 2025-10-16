@@ -1,10 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import pandas as pd
 import numpy as np
-import sklearn
-
 # -------------------- Load Models --------------------
 with open("Bank New model.pkl", "rb") as f:
     model = pickle.load(f)
@@ -70,6 +67,7 @@ if st.button("🔮 Predict"):
 with st.expander("📄 View Input Data"):
 
     st.dataframe(input_df)
+
 
 
 
