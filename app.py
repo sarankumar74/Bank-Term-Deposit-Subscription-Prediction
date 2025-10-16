@@ -3,7 +3,6 @@ import pandas as pd
 import pickle
 import pandas as pd
 import numpy as np
-from sklearn.tree import  DecisionTreeClassifier
 # -------------------- Load Models --------------------
 
 with open("Bank New model.pkl", "rb") as f:
@@ -70,6 +69,7 @@ if st.button("🔮 Predict"):
 with st.expander("📄 View Input Data"):
 
     st.dataframe(input_df)
+
 
 
 
