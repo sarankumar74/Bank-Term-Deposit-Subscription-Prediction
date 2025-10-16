@@ -7,7 +7,7 @@ import numpy as np
 # -------------------- Load Models --------------------
 
 with open("Bank New model.pkl", "rb") as f:
-    model = piccle.load(f)
+    model = pickle.load(f)
 
 
 # -------------------- Manual Mappings for Categorical Columns --------------------
@@ -61,4 +61,5 @@ if st.button("🔮 Predict"):
 
     except Exception as e:
         st.error(f"❌ Prediction Error: {e}")
+
 
