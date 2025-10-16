@@ -1,15 +1,11 @@
 scikit-learn
-Pandas 
-Numpy 
-Seaborn
-Matplotlip
-Streamlit
-Pickle
-XGBoost Classifier
-Decission Tree Classifier
-Ramdom Forest Classifier
-LogisticRegression
-GradientBoostingClassifier
+pandas
+numpy
+seaborn
+matplotlib
+streamlit
+xgboost
+
 
 
 
