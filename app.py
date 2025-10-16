@@ -6,8 +6,8 @@ import numpy as np
 
 # -------------------- Load Models --------------------
 
-with open("Bank Random Forest model.pkl", "rb") as f:
-    model = pickle.load(f)
+with open("Bank New model.pkl", "rb") as f:
+    model = piccle.load(f)
 
 
 # -------------------- Manual Mappings for Categorical Columns --------------------
@@ -56,8 +56,9 @@ if st.button("🔮 Predict"):
         prediction = model.predict(input_df)[0]
 
         
-        result = "Subscribe ✅" if prediction == 0 else "Not Subscribe ❌"
+        result = "Subscribe ✅" if prediction == 1 else "Not Subscribe ❌"
         st.success(f"Prediction: {result}")
 
     except Exception as e:
         st.error(f"❌ Prediction Error: {e}")
+
