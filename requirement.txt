@@ -1,4 +1,3 @@
-sklearn 
 Pandas 
 Numpy 
 Seaborn
@@ -10,4 +9,5 @@ Decission Tree Classifier
 Ramdom Forest Classifier
 LogisticRegression
 GradientBoostingClassifier
+
 
