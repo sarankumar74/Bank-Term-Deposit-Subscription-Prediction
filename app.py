@@ -3,7 +3,6 @@ import pandas as pd
 import pickle
 import pandas as pd
 import numpy as np
-from  sklearn 
 
 # -------------------- Load Models --------------------
 
@@ -71,4 +70,5 @@ if st.button("🔮 Predict"):
 with st.expander("📄 View Input Data"):
 
     st.dataframe(input_df)
+
 
