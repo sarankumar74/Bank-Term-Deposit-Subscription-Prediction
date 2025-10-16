@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import sklearn
 import pandas as pd
 import numpy as np
 
@@ -71,6 +70,7 @@ if st.button("🔮 Predict"):
 with st.expander("📄 View Input Data"):
 
     st.dataframe(input_df)
+
 
 
 
