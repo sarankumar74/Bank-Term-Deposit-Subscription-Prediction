@@ -3,8 +3,6 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Scikit-learn](https://img.shields.io/badge/Library-Scikit--learn-orange?logo=scikitlearn)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-brightgreen?logo=xgboost)
-![LightGBM](https://img.shields.io/badge/Model-LightGBM-lightgreen?logo=lightgbm)
-![CatBoost](https://img.shields.io/badge/Model-CatBoost-yellow)
 ![SHAP](https://img.shields.io/badge/Explainability-SHAP-blueviolet)
 ![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red?logo=streamlit)
 ![Domain](https://img.shields.io/badge/Domain-Financial%20Services%20%26%20Predictive%20Analytics-navy)
@@ -106,24 +104,35 @@ The system focuses on:
 
 ---
 
+<summary>📸 Click to view Streamlit UI screenshots</summary>
+
+#### Home Page  
+![Home Page](https://github.com/user-attachments/assets/cd739586-e3aa-4852-8496-89147d4e676e)
+
+
+#### Results Page  
+![Result Page](https://github.com/user-attachments/assets/85db0c8a-20e1-441f-b728-47299de56e73)
+
+
+---
+
 ## 🧩 Project Structure
 ```bash
+
 Bank-Term-Deposit-Prediction/
 │
-├── data/
-│   ├── bank_marketing.csv          # Input dataset
-│   └── processed/                  # Cleaned and encoded data
+├── EDA/        
+│   └── bank-term-eda.ipynb
 │
-├── notebooks/
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   ├── 03_model_training.ipynb
+├── Traning/
+│   ├── bank-term.ipynb
 │
-├── models/
-│   ├── models/                # Logistic, RF, SVM, XGBoost, LightGBM, CatBoost
+├── Bank Random Forest model.pkl
 │
+├── Bank New model.pkl
+│ 
 ├── app/
-│   ├── streamlit_app.py            # Deployed web app
+│   ├── app.py            
 │
-├── requirements.txt                # Dependencies
-└── README.md                       # Project documentation
+├── requirements.txt                
+└── README.md                      
