@@ -97,6 +97,7 @@ This project builds a binary classification model to score customer likelihood a
 
 
 ## 📁 Project Structure
+```
 Bank-Term-Deposit-Prediction/  
 │  
 ├── EDA/  
@@ -117,6 +118,7 @@ Bank-Term-Deposit-Prediction/
 
 > Suggestion: `.pkl` files inside `/models/` improves structure.
 
+```
 ---
 
 ## 🛠️ Installation & Execution
