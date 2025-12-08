@@ -1,5 +1,7 @@
-# 🏦 Bank-Term Deposit Subscription Prediction
+# 🏦 Bank Term Deposit Subscription Prediction
+🔍 *Machine Learning • Scikit-learn • XGBoost • SHAP • Streamlit • AWS*
 
+## 🚀 Tech Stack & Domains
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Scikit-learn](https://img.shields.io/badge/Library-Scikit--learn-orange?logo=scikitlearn)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-brightgreen?logo=xgboost)
@@ -10,97 +12,74 @@
 ---
 
 ## 📘 Overview
-**Bank-Term Deposit Subscription Prediction** is a **machine learning project** that predicts whether a bank client will subscribe to a term deposit offer based on demographic, financial, and campaign data.  
-Using **advanced ensemble models** and **feature engineering**, this project helps banks optimize marketing efforts, improve customer targeting, and enhance conversion rates.
+This project predicts whether a bank client will subscribe to a **term deposit** based on demographic, financial, and campaign behavior data.
 
-It demonstrates strong skills in **tabular ML**, **imbalanced data handling**, **model interpretability**, and **Streamlit-based deployment**.
+The system is designed to:
+- Improve marketing ROI via targeted outreach  
+- Reduce unnecessary campaign spending  
+- Improve customer experience with personalized offers  
+
+This project demonstrates **end-to-end ML lifecycle capability**, including feature engineering, model stacking, interpretability with SHAP, and real-time deployment with Streamlit.
 
 ---
 
 ## 🎯 Problem Statement
-Banks often face challenges in predicting which clients will subscribe to term deposits, resulting in inefficient marketing campaigns and resource waste.
+Banks struggle to identify customers likely to subscribe to term deposits, leading to:
+- Low conversion rates  
+- High marketing expenditure  
+- Poor campaign decision-making  
 
-This project aims to build a **binary classification model** that predicts **term deposit subscription likelihood** using historical client and campaign data.
-
-The system focuses on:
-- 🧩 Clean, modular ML pipelines using Scikit-learn  
-- 🧠 Robust model training with XGBoost, LightGBM, and CatBoost  
-- ⚖️ Handling imbalanced data and advanced encoding strategies  
-- 📊 Model interpretability with SHAP  
-- 🌐 Real-time deployment using Streamlit and AWS  
+This project builds a binary classification model to score customer likelihood and deliver **predictive insights for next-best action**.
 
 ---
 
 ## 💼 Business Use Cases
-
-### 🎯 Targeted Marketing
-- Focus marketing efforts on clients with **high conversion probability**  
-- Improve campaign ROI through **data-driven prioritization**
-
-### 💰 Cost Optimization
-- Reduce marketing costs by eliminating **low-potential leads**  
-- Allocate outreach resources effectively  
-
-### 🤝 Customer Retention
-- Identify **receptive customers** and tailor personalized offers  
-- Improve customer satisfaction and long-term loyalty  
-
-### 🧭 Strategic Decision-Making
-- Enable predictive insights for **next-best-action** decisions  
-- Support marketing and product teams with **AI-powered recommendations**  
+| Use Case | Description |
+|---------|-------------|
+| 🎯 Targeted Marketing | Focus on customers with high deposit subscription probability |
+| 💰 Cost Optimization | Reduce outreach to low-probability leads |
+| 🤝 Customer Retention | Tailor offers based on readiness and interest |
+| 🧭 Decision Support | Use predictions to support sales and marketing workflows |
 
 ---
 
-## 🧠 Skills Takeaway
-- **Python** – Core scripting and ML development  
-- **Pandas / NumPy** – Data preprocessing and manipulation  
-- **Scikit-learn** – Pipeline creation, model training, and validation  
-- **XGBoost / LightGBM / CatBoost** – Advanced tree-based ensemble methods  
-- **Model Stacking & Blending** – Ensemble optimization  
-- **SHAP Explainability** – Model interpretation and feature insights  
-- **Streamlit + AWS** – Interactive web deployment  
-- **Feature Engineering** – Encoding, scaling, interaction features  
-- **Model Evaluation** – Precision, Recall, F1, ROC-AUC  
+## 🧠 Model Performance Comparison
+| Model | Accuracy | Precision | Recall | F1-Score |
+|--------|----------|------------|--------|----------|
+| 🌳 DecisionTreeClassifier | **0.90** | 0.60 | 0.61 | 0.60 |
+| ⚡ XGBClassifier | **0.93** | 0.76 | 0.63 | 0.69 |
+| 👥 KNeighborsClassifier | **0.91** | 0.67 | 0.55 | 0.60 |
+
+🔹 **XGBClassifier achieved the best overall performance** based on accuracy and F1-score.  
+🔹 SHAP plots were used to validate interpretability and feature contribution.
 
 ---
 
-## 🗺️ Key Development Steps
+## 🗺️ Project Workflow
 
-### 🧾 Step 1: Data Preprocessing & Exploration
-- Processed **tabular client and campaign data**  
-- Addressed missing values, outliers, and inconsistent entries  
-- Encoded categorical variables with **ordered and one-hot encoding**  
-- Split data using **Stratified K-Fold Cross Validation**  
+### 🧾 1 — Data Preprocessing
+- Cleaned and validated dataset  
+- Missing value treatment & outlier removal  
+- Ordered + one-hot encoding for categorical variables  
+- Stratified train-test split for stable validation  
 
-### 🧮 Step 2: Feature Engineering
-- Created interaction features from key variables (e.g., age × balance, duration × education)  
-- Scaled numerical features using StandardScaler  
-- Balanced class distribution using **SMOTE / undersampling techniques**  
+### 🧮 2 — Feature Engineering
+- Interaction features (age × balance, duration × education)  
+- Numerical feature scaling  
+- SMOTE & undersampling for class imbalance  
 
-### 🤖 Step 3: Modeling
-#### Baseline Models
-- Logistic Regression and Random Forest  
+### 🤖 3 — Modeling
+- Baseline models: Logistic Regression, Random Forest  
+- Advanced models: XGBoost, LightGBM, CatBoost, Gradient Boost, SVM, Naive Bayes, ANN  
+- Stacking / blending ensembles for performance boost  
 
-#### Advanced Models
-- XGBoost, LightGBM, CatBoost, Gradient Boosting, SVM, Naive Bayes, and Neural Network (Deep Learning)  
-- Applied **model stacking and blending** for improved performance  
+### 📊 4 — Evaluation
+- Accuracy, Precision, Recall, F1-Score, AUC-ROC  
+- SHAP for global + local interpretability  
 
-### 📊 Step 4: Model Evaluation
-- Evaluated models using:
-  - Accuracy  
-  - Precision, Recall, F1-Score  
-  - ROC-AUC (primary metric)  
-- Used SHAP for **feature interpretability and impact visualization**  
-
-### 🧪 Step 5: Pipeline & Validation
-- Built reusable **Scikit-learn pipelines** to prevent data leakage  
-- Modularized preprocessing, modeling, and evaluation scripts  
-- Ensured reproducibility through **configurable training scripts**  
-
-### 🌐 Step 6: Deployment
-- Built **Streamlit web application** for live predictions  
-- Integrated with **AWS** for production deployment  
-- Enabled real-time input and prediction for business users  
+### 🌐 5 — Deployment
+- Streamlit web application for real-time customer scoring  
+- AWS deployment for business usability  
 
 ---
 
@@ -116,23 +95,44 @@ The system focuses on:
 
 ---
 
-## 🧩 Project Structure
-```bash
 
-Bank-Term-Deposit-Prediction/
-│
-├── EDA/        
-│   └── bank-term-eda.ipynb
-│
-├── Traning/
-│   ├── bank-term.ipynb
-│
-├── Bank Random Forest model.pkl
-│
-├── Bank New model.pkl
-│ 
-├── app/
-│   ├── app.py            
-│
-├── requirements.txt                
-└── README.md                      
+## 📁 Project Structure
+Bank-Term-Deposit-Prediction/  
+│  
+├── EDA/  
+│   └── bank-term-eda.ipynb  
+│  
+├── Training/  
+│   └── bank-term.ipynb  
+│  
+├── models/  
+│   ├── Bank Random Forest model.pkl  
+│   ├── Bank New model.pkl  
+│  
+├── app/  
+│   └── app.py  
+│  
+├── requirements.txt  
+└── README.md  
+
+> Suggestion: `.pkl` files inside `/models/` improves structure.
+
+---
+
+## 🛠️ Installation & Execution
+
+Clone repository:
+```
+git clone https://github.com/<username>/Bank-Term-Deposit-Prediction.git
+cd Bank-Term-Deposit-Prediction
+```
+
+Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+Run Streamlit app:
+```
+streamlit run app/app.py
+```
