@@ -1,5 +1,5 @@
 # 🏦 Bank Term Deposit Subscription Prediction
-🔍 *Machine Learning • Scikit-learn • XGBoost • Streamlit • Streamlit Cloud *
+🔍 *Machine Learning • Scikit-learn • XGBoost • Streamlit • Streamlit Cloud*
 
 ## 🚀 Tech Stack & Domains
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
