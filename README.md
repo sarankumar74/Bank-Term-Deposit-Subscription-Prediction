@@ -1,5 +1,5 @@
 # 🏦 Bank Term Deposit Subscription Prediction
-🔍 *Machine Learning • Scikit-learn • XGBoost • SHAP • Streamlit • AWS*
+🔍 *Machine Learning • Scikit-learn • XGBoost • Streamlit • Streamlit Cloud *
 
 ## 🚀 Tech Stack & Domains
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
@@ -116,8 +116,6 @@ Bank-Term-Deposit-Prediction/
 ├── requirements.txt  
 └── README.md  
 
-> Suggestion: `.pkl` files inside `/models/` improves structure.
-
 ```
 ---
 
@@ -125,7 +123,7 @@ Bank-Term-Deposit-Prediction/
 
 Clone repository:
 ```
-git clone https://github.com/<username>/Bank-Term-Deposit-Prediction.git
+git clone https://github.com/sarankumar74/Bank-Term-Deposit-Subscription-Prediction.git
 cd Bank-Term-Deposit-Prediction
 ```
 
